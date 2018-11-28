@@ -1,0 +1,710 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8314A8ED2143A61A005D4027 /* DynamicConfigurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8314A8EB2143A61A005D4027 /* DynamicConfigurationViewController.m */; };
+		8314A8F52143AD7D005D4027 /* CustomUISwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 8314A8F42143AD7D005D4027 /* CustomUISwitch.m */; };
+		83553CE0214267F300A04C55 /* ParameterInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83553CDF214267F300A04C55 /* ParameterInputViewController.m */; };
+		83553CEB2142C05700A04C55 /* ParameterInputViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83553CEA2142C05700A04C55 /* ParameterInputViewController.xib */; };
+		83B2477E2141688B00B75049 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B2477D2141688B00B75049 /* LaunchScreen.storyboard */; };
+		83B2478621416A0E00B75049 /* InitialConfigurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B2478521416A0E00B75049 /* InitialConfigurationViewController.m */; };
+		83B247912141910800B75049 /* ParameterSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B247902141910800B75049 /* ParameterSelectViewController.m */; };
+		83CF88EC213A3758004DA8EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CF88EB213A3758004DA8EE /* AppDelegate.m */; };
+		83CF88F2213A3758004DA8EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CF88F0213A3758004DA8EE /* Main.storyboard */; };
+		83CF88F4213A3759004DA8EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83CF88F3213A3759004DA8EE /* Assets.xcassets */; };
+		83CF88FA213A3759004DA8EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CF88F9213A3759004DA8EE /* main.m */; };
+		83CF8904213A3759004DA8EE /* MovieousLiveDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CF8903213A3759004DA8EE /* MovieousLiveDemoTests.m */; };
+		83CF890F213A3759004DA8EE /* MovieousLiveDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CF890E213A3759004DA8EE /* MovieousLiveDemoUITests.m */; };
+		83DF419F214258A40082FFA1 /* BroadcastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DF419D214258A40082FFA1 /* BroadcastViewController.m */; };
+		83DF41A0214258A40082FFA1 /* BroadcastViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83DF419E214258A40082FFA1 /* BroadcastViewController.xib */; };
+		A191D419D5315F722E511AA4 /* Pods_MovieousLiveDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC6A6C36CD060A0FAD7CBCD1 /* Pods_MovieousLiveDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		83CF8900213A3759004DA8EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83661F4F2125745A009DCC27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83CF88E7213A3758004DA8EE;
+			remoteInfo = MovieousLiveDemo;
+		};
+		83CF890B213A3759004DA8EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83661F4F2125745A009DCC27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83CF88E7213A3758004DA8EE;
+			remoteInfo = MovieousLiveDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8314A8EA2143A61A005D4027 /* DynamicConfigurationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicConfigurationViewController.h; sourceTree = "<group>"; };
+		8314A8EB2143A61A005D4027 /* DynamicConfigurationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicConfigurationViewController.m; sourceTree = "<group>"; };
+		8314A8F32143AD7D005D4027 /* CustomUISwitch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomUISwitch.h; sourceTree = "<group>"; };
+		8314A8F42143AD7D005D4027 /* CustomUISwitch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomUISwitch.m; sourceTree = "<group>"; };
+		83553CDE214267F300A04C55 /* ParameterInputViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParameterInputViewController.h; sourceTree = "<group>"; };
+		83553CDF214267F300A04C55 /* ParameterInputViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParameterInputViewController.m; sourceTree = "<group>"; };
+		83553CEA2142C05700A04C55 /* ParameterInputViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ParameterInputViewController.xib; sourceTree = "<group>"; };
+		83B2477D2141688B00B75049 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		83B2478421416A0E00B75049 /* InitialConfigurationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InitialConfigurationViewController.h; sourceTree = "<group>"; };
+		83B2478521416A0E00B75049 /* InitialConfigurationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InitialConfigurationViewController.m; sourceTree = "<group>"; };
+		83B2478F2141910800B75049 /* ParameterSelectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParameterSelectViewController.h; sourceTree = "<group>"; };
+		83B247902141910800B75049 /* ParameterSelectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParameterSelectViewController.m; sourceTree = "<group>"; };
+		83CF88E8213A3758004DA8EE /* MovieousLiveDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieousLiveDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83CF88EA213A3758004DA8EE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		83CF88EB213A3758004DA8EE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		83CF88F1213A3758004DA8EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		83CF88F3213A3759004DA8EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83CF88F8213A3759004DA8EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83CF88F9213A3759004DA8EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		83CF88FF213A3759004DA8EE /* MovieousLiveDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieousLiveDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83CF8903213A3759004DA8EE /* MovieousLiveDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieousLiveDemoTests.m; sourceTree = "<group>"; };
+		83CF8905213A3759004DA8EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83CF890A213A3759004DA8EE /* MovieousLiveDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieousLiveDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83CF890E213A3759004DA8EE /* MovieousLiveDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieousLiveDemoUITests.m; sourceTree = "<group>"; };
+		83CF8910213A3759004DA8EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83DF419C214258A40082FFA1 /* BroadcastViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BroadcastViewController.h; sourceTree = "<group>"; };
+		83DF419D214258A40082FFA1 /* BroadcastViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BroadcastViewController.m; sourceTree = "<group>"; };
+		83DF419E214258A40082FFA1 /* BroadcastViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BroadcastViewController.xib; sourceTree = "<group>"; };
+		CBFD46DDC7709580EBEAAD3D /* Pods-MovieousLiveDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieousLiveDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MovieousLiveDemo/Pods-MovieousLiveDemo.release.xcconfig"; sourceTree = "<group>"; };
+		CC6A6C36CD060A0FAD7CBCD1 /* Pods_MovieousLiveDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieousLiveDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F33FA4141DBF48083A239970 /* Pods-MovieousLiveDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieousLiveDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovieousLiveDemo/Pods-MovieousLiveDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83CF88E5213A3758004DA8EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A191D419D5315F722E511AA4 /* Pods_MovieousLiveDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83CF88FC213A3759004DA8EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83CF8907213A3759004DA8EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		58635D97D14C73D7A7C9F046 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F33FA4141DBF48083A239970 /* Pods-MovieousLiveDemo.debug.xcconfig */,
+				CBFD46DDC7709580EBEAAD3D /* Pods-MovieousLiveDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		83661F4E2125745A009DCC27 = {
+			isa = PBXGroup;
+			children = (
+				83CF88E9213A3758004DA8EE /* MovieousLiveDemo */,
+				83CF8902213A3759004DA8EE /* MovieousLiveDemoTests */,
+				83CF890D213A3759004DA8EE /* MovieousLiveDemoUITests */,
+				83661F582125745A009DCC27 /* Products */,
+				83FB424E21302ED90061CA88 /* Frameworks */,
+				58635D97D14C73D7A7C9F046 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		83661F582125745A009DCC27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83CF88E8213A3758004DA8EE /* MovieousLiveDemo.app */,
+				83CF88FF213A3759004DA8EE /* MovieousLiveDemoTests.xctest */,
+				83CF890A213A3759004DA8EE /* MovieousLiveDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83CF88E9213A3758004DA8EE /* MovieousLiveDemo */ = {
+			isa = PBXGroup;
+			children = (
+				83CF88EA213A3758004DA8EE /* AppDelegate.h */,
+				83CF88EB213A3758004DA8EE /* AppDelegate.m */,
+				83CF88F3213A3759004DA8EE /* Assets.xcassets */,
+				83CF88F8213A3759004DA8EE /* Info.plist */,
+				83CF88F9213A3759004DA8EE /* main.m */,
+				83B2477D2141688B00B75049 /* LaunchScreen.storyboard */,
+				83CF88F0213A3758004DA8EE /* Main.storyboard */,
+				83B2478421416A0E00B75049 /* InitialConfigurationViewController.h */,
+				83B2478521416A0E00B75049 /* InitialConfigurationViewController.m */,
+				8314A8F32143AD7D005D4027 /* CustomUISwitch.h */,
+				8314A8F42143AD7D005D4027 /* CustomUISwitch.m */,
+				83B2478F2141910800B75049 /* ParameterSelectViewController.h */,
+				83B247902141910800B75049 /* ParameterSelectViewController.m */,
+				83DF419C214258A40082FFA1 /* BroadcastViewController.h */,
+				83DF419D214258A40082FFA1 /* BroadcastViewController.m */,
+				83DF419E214258A40082FFA1 /* BroadcastViewController.xib */,
+				83553CDE214267F300A04C55 /* ParameterInputViewController.h */,
+				83553CDF214267F300A04C55 /* ParameterInputViewController.m */,
+				83553CEA2142C05700A04C55 /* ParameterInputViewController.xib */,
+				8314A8EA2143A61A005D4027 /* DynamicConfigurationViewController.h */,
+				8314A8EB2143A61A005D4027 /* DynamicConfigurationViewController.m */,
+			);
+			path = MovieousLiveDemo;
+			sourceTree = "<group>";
+		};
+		83CF8902213A3759004DA8EE /* MovieousLiveDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				83CF8903213A3759004DA8EE /* MovieousLiveDemoTests.m */,
+				83CF8905213A3759004DA8EE /* Info.plist */,
+			);
+			path = MovieousLiveDemoTests;
+			sourceTree = "<group>";
+		};
+		83CF890D213A3759004DA8EE /* MovieousLiveDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				83CF890E213A3759004DA8EE /* MovieousLiveDemoUITests.m */,
+				83CF8910213A3759004DA8EE /* Info.plist */,
+			);
+			path = MovieousLiveDemoUITests;
+			sourceTree = "<group>";
+		};
+		83FB424E21302ED90061CA88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC6A6C36CD060A0FAD7CBCD1 /* Pods_MovieousLiveDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		83CF88E7213A3758004DA8EE /* MovieousLiveDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83CF8911213A3759004DA8EE /* Build configuration list for PBXNativeTarget "MovieousLiveDemo" */;
+			buildPhases = (
+				1685866116A8979D082CD872 /* [CP] Check Pods Manifest.lock */,
+				83CF88E4213A3758004DA8EE /* Sources */,
+				83CF88E5213A3758004DA8EE /* Frameworks */,
+				83CF88E6213A3758004DA8EE /* Resources */,
+				7BCB82CBB98F370E7BD64F01 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MovieousLiveDemo;
+			productName = MovieousLiveDemo;
+			productReference = 83CF88E8213A3758004DA8EE /* MovieousLiveDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		83CF88FE213A3759004DA8EE /* MovieousLiveDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83CF8914213A3759004DA8EE /* Build configuration list for PBXNativeTarget "MovieousLiveDemoTests" */;
+			buildPhases = (
+				83CF88FB213A3759004DA8EE /* Sources */,
+				83CF88FC213A3759004DA8EE /* Frameworks */,
+				83CF88FD213A3759004DA8EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83CF8901213A3759004DA8EE /* PBXTargetDependency */,
+			);
+			name = MovieousLiveDemoTests;
+			productName = MovieousLiveDemoTests;
+			productReference = 83CF88FF213A3759004DA8EE /* MovieousLiveDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		83CF8909213A3759004DA8EE /* MovieousLiveDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83CF8917213A3759004DA8EE /* Build configuration list for PBXNativeTarget "MovieousLiveDemoUITests" */;
+			buildPhases = (
+				83CF8906213A3759004DA8EE /* Sources */,
+				83CF8907213A3759004DA8EE /* Frameworks */,
+				83CF8908213A3759004DA8EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83CF890C213A3759004DA8EE /* PBXTargetDependency */,
+			);
+			name = MovieousLiveDemoUITests;
+			productName = MovieousLiveDemoUITests;
+			productReference = 83CF890A213A3759004DA8EE /* MovieousLiveDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83661F4F2125745A009DCC27 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Movieous Team";
+				TargetAttributes = {
+					83CF88E7213A3758004DA8EE = {
+						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					83CF88FE213A3759004DA8EE = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 83CF88E7213A3758004DA8EE;
+					};
+					83CF8909213A3759004DA8EE = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 83CF88E7213A3758004DA8EE;
+					};
+				};
+			};
+			buildConfigurationList = 83661F522125745A009DCC27 /* Build configuration list for PBXProject "MovieousLiveDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83661F4E2125745A009DCC27;
+			productRefGroup = 83661F582125745A009DCC27 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83CF88E7213A3758004DA8EE /* MovieousLiveDemo */,
+				83CF88FE213A3759004DA8EE /* MovieousLiveDemoTests */,
+				83CF8909213A3759004DA8EE /* MovieousLiveDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		83CF88E6213A3758004DA8EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83B2477E2141688B00B75049 /* LaunchScreen.storyboard in Resources */,
+				83CF88F4213A3759004DA8EE /* Assets.xcassets in Resources */,
+				83DF41A0214258A40082FFA1 /* BroadcastViewController.xib in Resources */,
+				83CF88F2213A3758004DA8EE /* Main.storyboard in Resources */,
+				83553CEB2142C05700A04C55 /* ParameterInputViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83CF88FD213A3759004DA8EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83CF8908213A3759004DA8EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1685866116A8979D082CD872 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MovieousLiveDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BCB82CBB98F370E7BD64F01 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MovieousLiveDemo/Pods-MovieousLiveDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MovieousLiveDemo/Pods-MovieousLiveDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83CF88E4213A3758004DA8EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83B247912141910800B75049 /* ParameterSelectViewController.m in Sources */,
+				83DF419F214258A40082FFA1 /* BroadcastViewController.m in Sources */,
+				83553CE0214267F300A04C55 /* ParameterInputViewController.m in Sources */,
+				83B2478621416A0E00B75049 /* InitialConfigurationViewController.m in Sources */,
+				83CF88FA213A3759004DA8EE /* main.m in Sources */,
+				8314A8ED2143A61A005D4027 /* DynamicConfigurationViewController.m in Sources */,
+				8314A8F52143AD7D005D4027 /* CustomUISwitch.m in Sources */,
+				83CF88EC213A3758004DA8EE /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83CF88FB213A3759004DA8EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83CF8904213A3759004DA8EE /* MovieousLiveDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83CF8906213A3759004DA8EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83CF890F213A3759004DA8EE /* MovieousLiveDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		83CF8901213A3759004DA8EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83CF88E7213A3758004DA8EE /* MovieousLiveDemo */;
+			targetProxy = 83CF8900213A3759004DA8EE /* PBXContainerItemProxy */;
+		};
+		83CF890C213A3759004DA8EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83CF88E7213A3758004DA8EE /* MovieousLiveDemo */;
+			targetProxy = 83CF890B213A3759004DA8EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		83CF88F0213A3758004DA8EE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83CF88F1213A3758004DA8EE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		83661F812125745C009DCC27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		83661F822125745C009DCC27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		83CF8912213A3759004DA8EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F33FA4141DBF48083A239970 /* Pods-MovieousLiveDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22X7GPBZ68;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = ../Movieous;
+				INFOPLIST_FILE = MovieousLiveDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Masonry\"",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = video.movieous.MovieousLiveDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83CF8913213A3759004DA8EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBFD46DDC7709580EBEAAD3D /* Pods-MovieousLiveDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22X7GPBZ68;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = ../Movieous;
+				INFOPLIST_FILE = MovieousLiveDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Masonry\"",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = video.movieous.MovieousLiveDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		83CF8915213A3759004DA8EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22X7GPBZ68;
+				INFOPLIST_FILE = MovieousLiveDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = video.movieous.MovieousLiveDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieousLiveDemo.app/MovieousLiveDemo";
+			};
+			name = Debug;
+		};
+		83CF8916213A3759004DA8EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22X7GPBZ68;
+				INFOPLIST_FILE = MovieousLiveDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = video.movieous.MovieousLiveDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieousLiveDemo.app/MovieousLiveDemo";
+			};
+			name = Release;
+		};
+		83CF8918213A3759004DA8EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22X7GPBZ68;
+				INFOPLIST_FILE = MovieousLiveDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = video.movieous.MovieousLiveDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MovieousLiveDemo;
+			};
+			name = Debug;
+		};
+		83CF8919213A3759004DA8EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22X7GPBZ68;
+				INFOPLIST_FILE = MovieousLiveDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = video.movieous.MovieousLiveDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MovieousLiveDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83661F522125745A009DCC27 /* Build configuration list for PBXProject "MovieousLiveDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83661F812125745C009DCC27 /* Debug */,
+				83661F822125745C009DCC27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CF8911213A3759004DA8EE /* Build configuration list for PBXNativeTarget "MovieousLiveDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CF8912213A3759004DA8EE /* Debug */,
+				83CF8913213A3759004DA8EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CF8914213A3759004DA8EE /* Build configuration list for PBXNativeTarget "MovieousLiveDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CF8915213A3759004DA8EE /* Debug */,
+				83CF8916213A3759004DA8EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CF8917213A3759004DA8EE /* Build configuration list for PBXNativeTarget "MovieousLiveDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CF8918213A3759004DA8EE /* Debug */,
+				83CF8919213A3759004DA8EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83661F4F2125745A009DCC27 /* Project object */;
+}

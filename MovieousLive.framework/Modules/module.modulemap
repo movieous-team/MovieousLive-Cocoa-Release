@@ -1,0 +1,6 @@
+framework module MovieousLive {
+  umbrella header "MovieousLive.h"
+
+  export *
+  module * { export * }
+}
