@@ -18,7 +18,7 @@
 @optional
 
 /*!
- * Called when state of the controller changed
+ * @brief Called when state of the controller changed
  * @param controller The controller whose state has changed
  * @param state New state of the controller
  * @param error This Parameter will only be non nil when state turns to `MLStreamStateError`
@@ -26,7 +26,7 @@
 - (void)controller:(MLController *)controller stateDidChange:(MLState)state error:(NSError *)error;
 
 /*!
- * Called when new video data are available, you can do custom process within this delegate method
+ * @brief Called when new video data are available, you can do custom process within this delegate method
  * @param controller The controller whose state has changed
  * @param videoData Video data
  * @return The processed video data
@@ -34,7 +34,7 @@
 - (CVPixelBufferRef)controller:(MLController *)controller didGetVideoData:(CVPixelBufferRef)videoData;
 
 /*!
- * Called when new audio data are available, you can do custom process within this delegate method
+ * @brief Called when new audio data are available, you can do custom process within this delegate method
  * @param controller The controller whose state has changed
  * @param audioData Aideo data
  * @return The processed audio data
@@ -46,47 +46,47 @@
 @interface MLController : NSObject
 
 /*!
- @method     setLogLevel:
- @abstract   SDK Log Level, Default to MLStreamLogLevelWarning
- @warning    Don't use MLLogLevelVerbose for release version，this will cause performance issue。
+ * @brief SDK Log Level, Default to MLStreamLogLevelWarning
+ * @param logLevel New log level you want to set
+ * @warning Don't use MLLogLevelVerbose for release version，this will cause performance issue。
  */
 + (void)setLogLevel:(MLLogLevel)logLevel;
 
 /*!
- * Camera preview, you must get preview after `-startCapturingWithCompletion:` has been called
+ * @brief Camera preview, you must get preview after `-startCapturingWithCompletion:` has been called
  */
 @property(nonatomic, strong, readonly) UIView *preview;
 
 /*!
- * State of the MLController
+ * @brief State of the MLController
  */
 @property(nonatomic, assign, readonly) MLState state;
 
 /*!
- * URL of the server to which the stream is pushed
+ * @brief URL of the server to which the stream is pushed
  */
 @property(nonatomic, strong, readonly) NSURL *URL;
 
 /*!
- * How to scale content when aspect ratios of the content and preview are not equal
+ * @brief How to scale content when aspect ratios of the content and preview are not equal
  * Default to MovieousScalingModeAspectFit
  */
 @property(nonatomic, assign) MovieousScalingMode scalingMode;
 
 /*!
- * Delegate of the controller
+ * @brief Delegate of the controller
  * Default to nil
  */
 @property(nonatomic, weak) id <MLControllerDelegate> delegate;
 
 /*!
- * When dynamicFrameRate is enabled, ML engine will adjust frame rate when network is not able to send data realtime
+ * @brief When dynamicFrameRate is enabled, ML engine will adjust frame rate when network is not able to send data realtime
  * Default to NO
  */
 @property(nonatomic, assign) BOOL dynamicFrameRate;
 
 /*!
- * When autoReconnect is enabled, ML engine will try to reconnect to the server when live broadcasting is disconnected due to some exception. In this situation, state of the controller will turn to `MLStreamStateReconnecting`, and ML engine will try at most 3 times, from 0~2 seconds to 10 seconds. If the server still can't be connected, ML engine will give up trying, and state of the controller will turn to `MLStreamStateError`
+ * @brief When autoReconnect is enabled, ML engine will try to reconnect to the server when live broadcasting is disconnected due to some exception. In this situation, state of the controller will turn to `MLStreamStateReconnecting`, and ML engine will try at most 3 times, from 0~2 seconds to 10 seconds. If the server still can't be connected, ML engine will give up trying, and state of the controller will turn to `MLStreamStateError`
  * Default to YES
  */
 @property(nonatomic, assign) BOOL autoReconnect;
