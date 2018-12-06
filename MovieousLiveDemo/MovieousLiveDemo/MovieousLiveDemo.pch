@@ -1,0 +1,20 @@
+//
+//  MovieousLiveDemo.pch
+//  MovieousLiveDemo
+//
+//  Created by Chris Wang on 2018/12/6.
+//  Copyright © 2018 Movieous Team. All rights reserved.
+//
+
+#ifndef MovieousLiveDemo_pch
+#define MovieousLiveDemo_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#define SHOW_ALERT_FOR(title,errorMessage,actionMessage,baseController) do{dispatch_async(dispatch_get_main_queue(), ^{UIAlertController *controller = [UIAlertController alertControllerWithTitle:title message:errorMessage preferredStyle:UIAlertControllerStyleAlert];[controller addAction:[UIAlertAction actionWithTitle:actionMessage style:UIAlertActionStyleDefault handler:nil]];[baseController presentViewController:controller animated:YES completion:nil];});}while(0);
+#define SHOW_ERROR_ALERT_FOR(baseController) SHOW_ALERT_FOR(@"error", error.localizedDescription, @"ok", baseController)
+#define SHOW_ALERT(title,errorMessage,actionMessage) SHOW_ALERT_FOR(title,errorMessage,actionMessage,self);
+#define SHOW_ERROR_ALERT SHOW_ALERT(@"error", error.localizedDescription, @"ok")
+
+#endif /* MovieousLiveDemo_pch */

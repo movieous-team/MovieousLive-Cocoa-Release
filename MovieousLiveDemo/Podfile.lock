@@ -1,27 +1,35 @@
 PODS:
+  - AgoraRtcEngine_iOS (2.3.1)
   - Masonry (1.1.0)
   - MovieousBase (1.0.0)
   - MovieousLive (1.0.2):
     - MovieousBase (= 1.0.0)
+  - Nama (5.6.1)
 
 DEPENDENCIES:
+  - AgoraRtcEngine_iOS
   - Masonry
   - MovieousLive (from `../`)
+  - Nama (= 5.6.1)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - AgoraRtcEngine_iOS
     - Masonry
     - MovieousBase
+    - Nama
 
 EXTERNAL SOURCES:
   MovieousLive:
     :path: "../"
 
 SPEC CHECKSUMS:
+  AgoraRtcEngine_iOS: b0304fee470e0b88bd3abedf9ce1c4309f4fd722
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MovieousBase: 5d6ecb362b78d4785095af84ba9813cb51ed31c9
   MovieousLive: 3e325415cc0e2e8ce5eae9326bd5ddbc1f121e60
+  Nama: 87ac5b70f48042ebc57c4cc7cdb2184c12f00b6e
 
-PODFILE CHECKSUM: 25c11ef3d9083c585e6eb9aa2801a8b1c595c0f2
+PODFILE CHECKSUM: e5f5f25c2abaafbe6b6a015547286b091c967601
 
 COCOAPODS: 1.5.3
