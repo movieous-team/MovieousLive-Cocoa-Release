@@ -1,6 +1,0 @@
-framework module MovieousBase {
-  umbrella header "MovieousBase.h"
-
-  export *
-  module * { export * }
-}
