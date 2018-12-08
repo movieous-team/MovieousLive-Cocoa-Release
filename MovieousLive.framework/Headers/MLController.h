@@ -124,6 +124,26 @@
 - (void)startCapturingWithCompletion:(void (^)(AVAuthorizationStatus cameraAuthorizationStatus, AVAuthorizationStatus microphoneAuthorizationStatus, NSError *error))completion;
 
 /**
+ * @brief Pause audio capturing
+ */
+- (void)pauseAudioCapturing;
+
+/**
+ * @brief Resume audio capturing
+ */
+- (void)resumeAudioCapturing;
+
+/**
+ * @brief Pause video capturing
+ */
+- (void)pauseVideoCapturing;
+
+/**
+ * @brief Resume video capturing
+ */
+- (void)resumeVideoCapturing;
+
+/**
  * @brief Start broadcasting to the server
  * @param completion Completion callback. if any error happens, error will not be nil.
  */
