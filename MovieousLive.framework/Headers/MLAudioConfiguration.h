@@ -2,52 +2,42 @@
 //  MLAudioConfiguration.h
 //  MovieousLive
 //
-//  Created by Chris Wang on 2018/8/29.
-//  Copyright © 2018 Movieous Team. All rights reserved.
+//  Created by Chris Wang on 2019/3/22.
+//  Copyright © 2019 Movieous Team. All rights reserved.
 //
 
-#import <AVFoundation/AVFoundation.h>
 #import "MLTypeDefines.h"
+#import <MovieousBase/MovieousBase.h>
+
+NS_ASSUME_NONNULL_BEGIN
 
 @interface MLAudioConfiguration : NSObject
 <
-NSCopying
+MovieousMicrophoneConfiguration
 >
 
 /**
- * @brief Whether to enable audio broadcast
- * Default to YES
- */
-@property (nonatomic, assign) BOOL enable;
-
-/**
- * @brief The input source for audio
- * Default to MLAudioSourceMicrophone
+ * @brief Audio input source, the default is MLAudioSourceMicrophone
  */
 @property (nonatomic, assign) MLAudioSource source;
 
-/**
- * @brief Whether to allow mix with other audio
- * Default to YES
- */
-@property (nonatomic, assign) BOOL allowMixWithOthers;
+#pragma mark - microphone configurations
+
+@property (nonatomic, assign) BOOL mute;
+
+#pragma mark - encoder configurations
 
 /**
- * @brief Turn on this function to avoid acoustic echo.
- * Default to NO
+ * @brief Audio encoding rate bitRate The default is 128 * 1024
  */
-@property (nonatomic, assign) BOOL acousticEchoCancellationEnable;
+@property (assign, nonatomic) UInt32 bitrate;
 
 /**
- * @brief The encoded audio bitrate
- * Default to MLAudioBitRate96Kbps
- */
-@property (nonatomic, assign) MLAudioBitRate audioBitRate;
-
-/**
- * @brief The default configuration
- * @return The initialized default configuration
+ * @brief Create a default configuration of the MLAudioConfiguration instance
+ * @return Create a default object of MLAudioConfiguration
  */
 + (instancetype)defaultConfiguration;
 
 @end
+
+NS_ASSUME_NONNULL_END

@@ -1,27 +1,27 @@
 PODS:
-  - Masonry (1.1.0)
-  - MovieousBase (1.0.0)
-  - MovieousLive (1.0.2):
-    - MovieousBase (= 1.0.0)
+  - MovieousBase (1.0.3)
+  - MovieousLive (2.0.0):
+    - MovieousBase (= 1.0.3)
+  - SnapKit (4.2.0)
 
 DEPENDENCIES:
-  - Masonry
   - MovieousLive (from `../`)
+  - SnapKit
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - Masonry
     - MovieousBase
+    - SnapKit
 
 EXTERNAL SOURCES:
   MovieousLive:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  MovieousBase: 5d6ecb362b78d4785095af84ba9813cb51ed31c9
-  MovieousLive: 3e325415cc0e2e8ce5eae9326bd5ddbc1f121e60
+  MovieousBase: d7fe085e3d309838400500923c8cbd2e5f7a793e
+  MovieousLive: 85b3b82211f0f42091988950fae03a8c899ac24c
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
-PODFILE CHECKSUM: 25c11ef3d9083c585e6eb9aa2801a8b1c595c0f2
+PODFILE CHECKSUM: 5222403259521e827dda22aee825281e6126c51d
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.1
