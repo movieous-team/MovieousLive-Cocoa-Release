@@ -1,38 +1,36 @@
-# MovieousShortVideo-Cocoa
+# MovieousLive-Cocoa
 
-`Movieous 直播 SDK` 是 [Movieous](https://movieous.cn/) 研发的一站式 RTMP 直播推流 SDK，它提供简单易用的 API，并且拥有超强的机型及版本兼容性，极致的性能表现，丰富的功能以及众多的三方生态支持。集成 `Movieous 直播 SDK` 能够让开发者快速构建一款优秀的手机直播 app。
+`Movieous 直播 SDK` 是 [Movieous](https://movieous.cn) 研发的一站式 RTMP 直播推流 SDK，它提供简单易用的 API，兼容多机型及系统版本，有高性能、丰富的功能，支持包括美颜，特效，变声等在内的丰富第三方生态。集成 `Movieous 直播 SDK` 能够让开发者快速构建一款优秀的手机直播 app。
 
 *其他语言版本: [English](README.md), [简体中文](README.zh-cn.md).*
 
 ## 功能
 
-- [x] 音频数据采集
-- [x] 音频采集参数配置
-- [x] 视频数据采集
-- [x] 视频采集参数配置
-- [x] H.264 视频编码
-- [x] H.264 视频编码参数配置
-- [x] H.264 硬件编码
-- [x] AAC 音频编码
-- [x] AAC 音频编码参数配置
-- [x] AAC 硬件编码
+- [x] 麦克风音频采集
+- [x] 外部音频数据导入
+- [x] 摄像头视频采集
+- [x] UIView 录制
+- [x] 外部视频数据导入
+- [x] H.264 视频硬编
+- [x] AAC 音频软编
 - [x] RTMP 协议推流
-- [x] 返听
-- [x] 内置背景音乐播放器
-- [x] 麦克风与背景音乐混音
-- [x] 多种音效
-- [x] 自定义音频处理
+- [x] 自定义视频分辨率
+- [x] 内置美颜
+- [x] 贴纸（水印）
+- [x] 预览及编码的视频镜像独立配置
+- [x] 内置点击对焦
+- [x] 自定义手电筒模式
+- [x] 自定义最大最小采集帧率
+- [x] 自定义采集分辨率
+- [x] 前后摄像头切换
+- [x] 视频旋转
+- [x] 相机变焦
+- [x] 自定义对焦和曝光相关参数
+- [x] 自定义 H.264 GOP 长度
+- [x] 自定义 H.264 profile level
 - [x] 静音
-- [x] 美颜
-- [x] 水印
-- [x] 镜像
-- [x] 自定义视频处理
-- [x] 纯音频或纯视频推流
-- [x] 自适应码率
-- [x] 动态帧率
-- [x] 弱网丢帧优化
-- [x] 断线或网络切换自动重连
-- [x] 后台推图片 + 音频
+- [x] 自定义音视频码率
+- [x] 推流状态实时统计
 
 ## 版本要求
 
@@ -65,16 +63,15 @@ sudo gem install cocoapods
 #### 使用Podfile集成
 
 通过 [CocoaPods](https://cocoapods.org/) 安装可以最大化地简化安装过程。
-首先，在项目根目录下的 Podfile 文件中添加以下 pods（我们假设您的项目 target 名称为 `iOSDemo`）：
+首先，在项目根目录下的 Podfile 文件中添加以下 pods（我们假设您的项目 target 名称为 `YourTargetName`）：
 
 ```ruby
-target 'iOSDemo' do
+target 'YourTargetName' do
     pod 'MovieousLive'
 end
 ```
 
-<span data-type="color" style="color:rgb(51, 51, 51)"><span data-type="background" style="background-color:rgb(255, 255, 255)">然后在项目根目录执行 </span></span>`pod install`<span data-type="color" style="color:rgb(51, 51, 51)"><span data-type="background" style="background-color:rgb(255, 255, 255)"> </span></span>命令，执行成功后，SDK 就集成到项目中了。
-<em>如果长时间没有拉取过pod 仓库，可能出现无法找到我们的repo的情况，此时建议先使用 </em><code><em>pod repo update</em></code><em> 更新pod仓库。</em>
+然后在项目根目录执行 `pod install` 命令，执行成功后，SDK 就集成到项目中了。如果长时间没有拉取过pod 仓库，可能出现无法找到我们的repo的情况，此时建议先使用 `pod repo update` 更新pod仓库。
 
 ## 使用方法
 

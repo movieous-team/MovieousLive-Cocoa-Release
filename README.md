@@ -1,38 +1,35 @@
 # MovieousLive-Cocoa
 
-MovieousLive is a one-step RTMP live stream SDK developed by [Movieous](https://movieous.cn/), which provides a concise API with superior model and version compatibility and extreme performance. Rich features and numerous tripartite ecological support. Integrated MovieousLive enables developers to quickly generate an excellent mobile live app.
+MovieousLive is a one-stop RTMP live streaming SDK developed by [Movieous](http://movieous.video), which provide easy-to-use API, compatibility for multiple devices and OS versions, high performance, abundant features and support for third-party SDK including face-beaty, special-effects and sound-distortion, etc. developers can build an excellent mobile live streaming app use MovieousLive SDK.
 
 *Read this in other languages: [English](README.md), [简体中文](README.zh-cn.md).*
 
 ## Features
-
-- [x] Audio data collection
-- [x] Audio collection parameter settings
-- [x] Video data collection
-- [x] Video collection parameter settings
-- [x] H.264 Video encoding
-- [x] H.264 Video encoding parameter settings
-- [x] H.264 hardware encoding
-- [x] AAC encoding
-- [x] AAC Audio encoding parameter settings
-- [x] AAC hardware encoding
-- [x] RTMP protocol stream pushing
-- [x] Listen back (listen to your own sound through ear phone)
-- [x] Built-in background music player
-- [x] Mix the microphone with the background music
-- [x] Multiple music effects
-- [x] Customize audio processing
-- [x] Mute
-- [x] Beautify
-- [x] Watermark
-- [x] Mirror 
-- [x] Customize video processing
-- [x] Pure audio or video stream pushing
-- [x] Adative bitrate
-- [x] Dynamic frame rate
-- [x] weak network frame loss optimization
-- [x] Automatically reconnect in Paused or switched network 
-- [x] Pushing picture and Audio from backstage
+- [x] microphone audio data capture
+- [x] external audio data import
+- [x] camera video data capture
+- [x] UIVIew record
+- [x] external video data import
+- [x] H.264 video hardware encode
+- [x] AAC audio software encode
+- [x] RTMP protocol live streaming
+- [x] video resolution configurable
+- [x] embedded face beauty
+- [x] image sticker(watermark)
+- [x] preview and encoded video mirror independently configurable
+- [x] embedded touch to focus
+- [x] torch mode configurable
+- [x] max and min capture frame rate configurable
+- [x] capture resolution configurable
+- [x] front and back camera switch
+- [x] video orientation configurable
+- [x] zoom factor configurable
+- [x] focus and exposure parameters configurable
+- [x] H.264 GOP length configurable
+- [x] H.264 profile level configurable
+- [x] mute
+- [x] audio and video bitrate configurable
+- [x] statistics for live streaming status
 
 ## SDK Requirements
 
@@ -43,24 +40,15 @@ MovieousLive supports multiple methods for installing the library in a project.
 
 ### Installation with CocoaPods
 
-[CocoaPods](http://cocoapods.org) is a dependency manager for Objective-C, which automates and simplifies the process of using 3rd-party libraries like MovieousLive in your projects. See the ["Getting Started" guide for more information](https://developer.movieous.cn/#/en-uk/iOS_Live?id=quict-start). You can install it with the following command:
-
-```bash
-$ gem install cocoapods
-```
-
-> CocoaPods 0.39.0+ is required to build MovieousLive.
+[CocoaPods](http://cocoapods.org/) is a dependency manager for Objective-C, which automates and simplifies the process of using 3rd-party libraries in your projects. See the [Get Started](http://cocoapods.org/#get_started) section for more details.
 
 #### Podfile
 
-To integrate MovieousLive into your Xcode project using CocoaPods, specify it in your `Podfile`:
+To integrate MovieousLive into your Xcode project using CocoaPods, specify it in your `Podfile`, assume your target name is `YourTargetName`:
 
 ```ruby
-source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '8.0'
-
-target 'TargetName' do
-pod 'MovieousLive'
+target 'YourTargetName' do
+    pod 'MovieousLive'
 end
 ```
 
