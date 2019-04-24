@@ -1,6 +1,6 @@
 # MovieousLive-Cocoa
 
-`Movieous 直播 SDK` 是 [Movieous](https://movieous.cn) 研发的一站式 RTMP 直播推流 SDK，它提供简单易用的 API，兼容多机型及系统版本，有高性能、丰富的功能，支持包括美颜，特效，变声等在内的丰富第三方生态。集成 `Movieous 直播 SDK` 能够让开发者快速构建一款优秀的手机直播 app。
+`Movieous 直播 SDK` 是 [Movieous](https://movieous.cn) 研发的一站式 RTMP 直播推流 SDK。它提供简单易用的 API，兼容多机型及系统版本，拥有出色的性能、丰富的功能，支持包括美颜，特效，变声等在内的丰富第三方生态。集成 `Movieous 直播 SDK` 能够让开发者快速构建一款优秀的手机直播 app。
 
 *其他语言版本: [English](README.md), [简体中文](README.zh-cn.md).*
 
@@ -16,7 +16,9 @@
 - [x] RTMP 协议推流
 - [x] 自定义视频分辨率
 - [x] 内置美颜
+- [x] LUT(look up table) 滤镜
 - [x] 贴纸（水印）
+- [x] 外部视频处理插件
 - [x] 预览及编码的视频镜像独立配置
 - [x] 内置点击对焦
 - [x] 自定义手电筒模式
@@ -31,6 +33,9 @@
 - [x] 静音
 - [x] 自定义音视频码率
 - [x] 推流状态实时统计
+- [x] 纯音频推流
+- [x] 纯视频推流
+- [x] 生成快照
 
 ## 版本要求
 

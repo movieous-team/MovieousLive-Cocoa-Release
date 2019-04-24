@@ -1,6 +1,6 @@
 # MovieousLive-Cocoa
 
-MovieousLive is a one-stop RTMP live streaming SDK developed by [Movieous](http://movieous.video), which provide easy-to-use API, compatibility for multiple devices and OS versions, high performance, abundant features and support for third-party SDK including face-beaty, special-effects and sound-distortion, etc. developers can build an excellent mobile live streaming app use MovieousLive SDK.
+`MovieousLive` is a one-stop RTMP live streaming SDK developed by [Movieous](http://movieous.video), which provide easy-to-use API, compatibility for multiple devices and OS versions, it provides high performance, abundant features and support for third-party SDK including face-beaty, special-effects and sound-distortion, etc. developers can build an excellent mobile live streaming app use `MovieousLive` SDK.
 
 *Read this in other languages: [English](README.md), [简体中文](README.zh-cn.md).*
 
@@ -14,8 +14,10 @@ MovieousLive is a one-stop RTMP live streaming SDK developed by [Movieous](http:
 - [x] AAC audio software encode
 - [x] RTMP protocol live streaming
 - [x] video resolution configurable
-- [x] embedded face beauty
+- [x] embedded face beautification
+- [x] LUT(look up table) filter
 - [x] image sticker(watermark)
+- [x] external video processing plugin
 - [x] preview and encoded video mirror independently configurable
 - [x] embedded touch to focus
 - [x] torch mode configurable
@@ -30,7 +32,9 @@ MovieousLive is a one-stop RTMP live streaming SDK developed by [Movieous](http:
 - [x] mute
 - [x] audio and video bitrate configurable
 - [x] statistics for live streaming status
-
+- [x] pure audio streaming
+- [x] pure video streaming
+- [x] generate snapshot
 ## SDK Requirements
 
 iOS 8.0 or later
