@@ -9,45 +9,41 @@
 #import <Foundation/Foundation.h>
 
 /**
- * Video input souce type.
+ * 视频输入源类型。
  */
 typedef NS_ENUM(NSInteger, MLVideoSource) {
     /**
-     * No video，please don't set both video source and audio source to none.
+     * 无视频源，请不要同时将视频和音频源设置为无。
      */
     MLVideoSourceNone,
     /**
-     * Camera input source.
+     * 摄像头视频源。
      */
     MLVideoSourceCamera,
     /**
-     * UIView input source, when you use this input source please specify viewForRecording property in `startRecordingWithClipConfiguration:error:` method.
-     */
-    MLVideoSourceUIView,
-    /**
-     * External video source.
+     * 外部视频源
      *
-     * @warning When you use this input source, please use `writeVideoData:error:` to write video data, if you choose external video source but don't input video data, unknown error may come out.
+     * @warning 当你使用此输入源时，请使用 `writeVideoData:error:` 方法来写入视频数据，如果你使用 MSVVideoSourceExtern 但是又不写入视频数据，未知的错误将会产生。
      */
     MLVideoSourceExtern,
 };
 
 /**
- * Audio input source
+ * 音频输入源。
  */
 typedef NS_ENUM(NSInteger, MLAudioSource) {
     /**
-     * No audio，please don't set both video source and audio source to none.
+     * 无音频输入源，请不要同时将视频和音频源设置为无。
      */
     MLAudioSourceNone,
     /**
-     * Microphone input source.
+     * 麦克风音频输入源。
      */
     MLAudioSourceMicrophone,
     /**
-     * External input source.
+     * 外部音频输入源。
      *
-     * @warning You must use `writeAudioData:error:` method to input audio data when use this input source, if you choose external audio source but don't input audio data, unknown error may come out.
+     * @warning 当你使用此输入源时，请使用 `writeAudioData:error:` 方法来写入音频数据，如果你使用 MSVAudioSourceExtern 但是又不写入音频数据，未知的错误将会产生。
      */
     MLAudioSourceExtern,
 };

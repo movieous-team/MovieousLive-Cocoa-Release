@@ -65,3 +65,5 @@ iOSInjectionProject/
 .DS_Store
 .idea
 Pods
+docs
+docs.zh-cn

@@ -143,6 +143,17 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) AVCaptureTorchMode preferredTorchMode;
 
 /**
+ * The current flashMode being used on the camera.
+ */
+@property (nonatomic, assign, readonly) AVCaptureFlashMode flashMode;
+
+/**
+ * Specify the preferred flash mode to use on camera, what needs to note is that the preferredFlashMode is not guaranteed to be applied succesfully, the actual torch mode can be accessed by the property flashMode.
+ * The default is the same as the videoConfiguration initializing the recorder.
+ */
+@property (nonatomic, assign) AVCaptureFlashMode preferredFlashMode;
+
+/**
  * A property indicating the format's supported frame rate ranges. videoSupportedFrameRateRanges is an array of AVFrameRateRange objects, one for each of the format's supported video frame rate ranges.
  */
 @property(nonatomic, readonly) NSArray<AVFrameRateRange *> *videoSupportedFrameRateRanges;
@@ -273,7 +284,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) CGPoint preferredExposurePointOfInterest;
 
 /**
- * Mute sound while recording, if you want to record a movie with no sound, you can specify source property in audioConfiguration to MSVAudioSourceNone.
+ * Mute sound while recording, if you want to record a movie with no sound, you can specify source property in audioConfiguration to MLAudioSourceNone.
  * The default is the same as the audioConfiguration initializing the recorder.
  */
 @property (nonatomic, assign) BOOL mute;
@@ -368,7 +379,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  * @param completionHandler Called when capture completes.
  */
-- (void)snapshotWithCompletion:(void(^)(UIImage *image))completionHandler;
+- (void)snapshotWithCompletion:(MovieousSnapshotCompletionHandler)completionHandler;
 
 /**
  * Start stream statistics update.

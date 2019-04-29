@@ -21,10 +21,6 @@ typedef NS_ENUM(NSInteger, MLVideoSource) {
      */
     MLVideoSourceCamera,
     /**
-     * UIView input source, when you use this input source please specify viewForRecording property in `startRecordingWithClipConfiguration:error:` method.
-     */
-    MLVideoSourceUIView,
-    /**
      * External video source.
      *
      * @warning When you use this input source, please use `writeVideoData:error:` to write video data, if you choose external video source but don't input video data, unknown error may come out.

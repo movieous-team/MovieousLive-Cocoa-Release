@@ -11,89 +11,89 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /**
- * Statistics result.
+ * 流状态统计结果。
  */
 @interface MLStreamStatistics : NSObject
 
 /**
- * The interval for the statistics.
+ * 流状态统计周期。
  */
 @property (nonatomic, assign) NSTimeInterval interval;
 
 /**
- * The bytes of total(audio & video) data sent by the streamer.
+ * 统计周期内音视频发送的总字节数。
  */
 @property (nonatomic, assign) double bytesSent;
 
 /**
- * The total(audio & video) bitrate for streamer.
+ * 统计周期内的音视频总码率。
  */
 @property (nonatomic, assign, readonly) double bitrate;
 
 /**
- * The bytes of video data sent by the streamer.
+ * 统计周期内视频发送的字节数。
  */
 @property (nonatomic, assign) double videoBytesSent;
 
 /**
- * The video bitrate for streamer.
+ * 统计周期内的视频码率。
  */
 @property (nonatomic, assign, readonly) double videoBitrate;
 
 /**
- * The video frames captured within the statistic duration.
+ * 统计周期内的视频采集总帧数。
  */
 @property (nonatomic, assign) double videoFramesCaptured;
 
 /**
- * The video frames captured per seconds.
+ * 统计周期内的视频采集帧率。
  */
 @property (nonatomic, assign, readonly) double videoFPSCaptured;
 
 /**
- * The total video frames sent.
+ * 统计周期内的视频发送总帧数。
  */
 @property (nonatomic, assign) double videoFramesSent;
 
 /**
- * The total video frames sent per seconds.
+ * 统计周期内的视频发送帧率。
  */
 @property (nonatomic, assign, readonly) double videoFPSSent;
 
 /**
- * The audio data sent in bytes.
+ * 统计周期内的音频发送总字节数。
  */
 @property (nonatomic, assign) double audioBytesSent;
 
 /**
- * The audio bitrate.
+ * 统计周期内的音频码率。
  */
 @property (nonatomic, assign, readonly) double audioBitrate;
 
 /**
- * The audio frames captured.
+ * 统计周期内的音频采集帧数（一帧为 1024 个采样点）。
  */
 @property (nonatomic, assign) double audioFramesCaptured;
 
 /**
- * The audio frames capotured per seconds.
+ * 统计周期内的音频采集帧率。
  */
 @property (nonatomic, assign, readonly) double audioFPSCaptured;
 
 /**
- * The audio frames sent.
+ * 统计周期内音频的发送帧数。
  */
 @property (nonatomic, assign) double audioFramesSent;
 
 /**
- * The audio frames sent per seconds.
+ * 统计周期内音频的发送帧率。
  */
 @property (nonatomic, assign, readonly) double audioFPSSent;
 
 /**
- * Initialize the MLStreamStatistics object.
+ * 初始化一个 MLStreamStatistics 对象。
  *
- * @params interval Total interval.
+ * @params interval 统计周期。
  */
 - (instancetype)initWithInterval:(NSTimeInterval)interval;
 
