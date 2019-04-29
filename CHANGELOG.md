@@ -1,5 +1,10 @@
 *Read this in other languages: [English](CHANGELOG.md), [简体中文](CHANGELOG.zh-cn.md).*
 
+# v2.0.0(2019-4-28)
+## Others
+- update header documentations
+- update MovieousBase to v1.0.5
+
 # v2.0.0(2019-4-23)
 ## Feature
 - support more camera operations(auto focus and exposure mode, etc.)
@@ -7,7 +12,7 @@
 ## Enhancement
 - use new kernel, reduce more than 50% of memory and CPU usage
 - improve stablity
-## Other
+## Others
 - interface on v2.x.x is not compatible with v1.x.x, you need to update relevant code if you update to this version
 
 # v1.0.2(2018-12-8)

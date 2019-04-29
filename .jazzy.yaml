@@ -1,0 +1,6 @@
+clean: true
+objc: true
+theme: fullwidth
+sdk: iphonesimulator
+umbrella_header: .jazzy/MovieousLive/MovieousLive.h
+framework_root: .jazzy

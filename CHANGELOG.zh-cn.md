@@ -1,5 +1,10 @@
 *其他语言版本: [English](CHANGELOG.md), [简体中文](CHANGELOG.zh-cn.md).*
 
+# v2.0.0(2019-4-28)
+## Others
+- 更新头文件文档
+- 将 MovieousBase 更新到 v1.0.5
+
 # v2.0.0(2019-4-23)
 ## 功能
 - 支持更多的摄像头操作（自动对焦，曝光等）

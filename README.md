@@ -5,6 +5,7 @@
 *Read this in other languages: [English](README.md), [简体中文](README.zh-cn.md).*
 
 ## Features
+
 - [x] microphone audio data capture
 - [x] external audio data import
 - [x] camera video data capture
@@ -35,11 +36,14 @@
 - [x] pure audio streaming
 - [x] pure video streaming
 - [x] generate snapshot
+- [x] configurable flash mode
+
 ## SDK Requirements
 
 iOS 8.0 or later
 
 ## How to install
+
 MovieousLive supports multiple methods for installing the library in a project.
 
 ### Installation with CocoaPods
