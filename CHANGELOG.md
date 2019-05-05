@@ -1,5 +1,9 @@
 *Read this in other languages: [English](CHANGELOG.md), [简体中文](CHANGELOG.zh-cn.md).*
 
+# v2.0.2(2019-5-5)
+## Fixes
+- fix `preferredVideoOrientation` becomes invalid after switching camera.
+
 # v2.0.1(2019-4-29)
 ## Features
 - add `flashMode` to adjust flash mode.

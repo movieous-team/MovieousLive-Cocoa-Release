@@ -1,5 +1,9 @@
 *其他语言版本: [English](CHANGELOG.md), [简体中文](CHANGELOG.zh-cn.md).*
 
+# v2.0.2(2019-5-5)
+## 其他
+- 修复 `preferredVideoOrientation` 在切换摄像头之后不生效的问题。
+
 # v2.0.1(2019-4-29)
 ## 功能
 - 添加 `flashMode` 调整闪光灯模式。
