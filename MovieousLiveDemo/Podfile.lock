@@ -1,7 +1,7 @@
 PODS:
-  - MovieousBase (1.0.7)
-  - MovieousLive (2.0.2):
-    - MovieousBase (= 1.0.7)
+  - MovieousBase (1.0.8)
+  - MovieousLive (2.0.3):
+    - MovieousBase (~> 1.0.8)
   - SnapKit (4.2.0)
 
 DEPENDENCIES:
@@ -18,8 +18,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MovieousBase: f9bbe9551ec701973f514b7d18875f97e935ea73
-  MovieousLive: 03d64c1eedc5f9245c01cd1f31e7229a8ae2af33
+  MovieousBase: 98cc94a4991c43f13cec36354df4f0d65f343b4a
+  MovieousLive: d6df5fd9cf48d2b2575ffdefa37cfdb618e82966
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
 PODFILE CHECKSUM: 5222403259521e827dda22aee825281e6126c51d

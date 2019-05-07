@@ -1,5 +1,9 @@
 *Read this in other languages: [English](CHANGELOG.md), [简体中文](CHANGELOG.zh-cn.md).*
 
+# v2.0.3(2019-5-7)
+## Fixes
+- fix main thread been block after `-startCapturingWithCompletion` being called.
+
 # v2.0.2(2019-5-5)
 ## Fixes
 - fix `preferredVideoOrientation` becomes invalid after switching camera.
