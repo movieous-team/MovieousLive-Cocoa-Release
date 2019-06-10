@@ -1,5 +1,10 @@
 *其他语言版本: [English](CHANGELOG.md), [简体中文](CHANGELOG.zh-cn.md).*
 
+# v2.0.4(2019-6-9)
+## 修复
+- 修复退后台回到前台报错 `-12903` 的问题。
+- 支持后台推音频。
+
 # v2.0.3(2019-5-7)
 ## 修复
 - 修复 `-startCapturingWithCompletion` 调用时会短暂卡住主线程的问题。

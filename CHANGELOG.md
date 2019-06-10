@@ -1,5 +1,10 @@
 *Read this in other languages: [English](CHANGELOG.md), [简体中文](CHANGELOG.zh-cn.md).*
 
+# v2.0.4(2019-6-9)
+## Fixes
+- fix error `12903` when returning to foreground from background.
+- support background audio streaming.
+
 # v2.0.3(2019-5-7)
 ## Fixes
 - fix main thread been block after `-startCapturingWithCompletion` being called.
