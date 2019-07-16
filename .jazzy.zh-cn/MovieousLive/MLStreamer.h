@@ -55,6 +55,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong, nullable, readonly) NSURL *serverURL;
 
 /**
+ * 当前是否处于正在采集的状态。
+ */
+@property (nonatomic, assign, readonly) BOOL capturing;
+
+/**
  * 当前推流器是否正在运行。
  */
 @property (nonatomic, assign, readonly) BOOL running;
@@ -118,6 +123,12 @@ NS_ASSUME_NONNULL_BEGIN
  * 默认和初始化录制器使用的 videoConfiguration 一致。
  */
 @property (nonatomic, assign) BOOL mirrorBackEncoded;
+
+/**
+ * 切换摄像头时是否进行模糊化过渡
+ * 默认和初始化录制器使用的 videoConfiguration 一致。
+ */
+@property (nonatomic, assign) BOOL blurSwitch;
 
 /**
  * 是否开启点击屏幕来设置对焦和曝光参考点。

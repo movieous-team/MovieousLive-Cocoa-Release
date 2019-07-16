@@ -1,5 +1,10 @@
 *Read this in other languages: [English](CHANGELOG.en-us.md), [简体中文](CHANGELOG.md).*
 
+# v2.0.5(2019-7-16)
+## Features
+- update `MovieousBase` to v1.1.1.
+- support blur while switching camera position.
+
 # v2.0.4(2019-6-9)
 ## Fixes
 - fix error `12903` when returning to foreground from background.
@@ -18,7 +23,7 @@
 - add `flashMode` to adjust flash mode.
 ## Others
 - update header documentations.
-- update MovieousBase to v1.0.5.
+- update `MovieousBase` to v1.0.5.
 
 # v2.0.0(2019-4-23)
 ## Feature

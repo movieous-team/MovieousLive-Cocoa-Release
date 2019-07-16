@@ -55,6 +55,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong, nullable, readonly) NSURL *serverURL;
 
 /**
+ * Whether it is in the status of capturing or not.
+ */
+@property (nonatomic, assign, readonly) BOOL capturing;
+
+/**
  * The running status of the streamer.
  */
 @property (nonatomic, assign, readonly) BOOL running;
@@ -118,6 +123,12 @@ NS_ASSUME_NONNULL_BEGIN
  * The default is the same as the videoConfiguration initializing the recorder.
  */
 @property (nonatomic, assign) BOOL mirrorBackEncoded;
+
+/**
+ * Whether to blur picture while switching camera position.
+ * The default is the same as the videoConfiguration initializing the recorder.
+ */
+@property (nonatomic, assign) BOOL blurSwitch;
 
 /**
  * Whether to enable touch to focus and exposure the specified point in the preview.

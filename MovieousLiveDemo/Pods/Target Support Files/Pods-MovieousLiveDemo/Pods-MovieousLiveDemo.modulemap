@@ -1,0 +1,6 @@
+framework module Pods_MovieousLiveDemo {
+  umbrella header "Pods-MovieousLiveDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
