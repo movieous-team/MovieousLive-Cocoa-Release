@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8302E2EA226EB2A900611734 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8302E2E9226EB2A900611734 /* AppDelegate.swift */; };
-		8302E2EF226EB2A900611734 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8302E2ED226EB2A900611734 /* Main.storyboard */; };
 		8302E2F1226EB2AA00611734 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8302E2F0226EB2AA00611734 /* Assets.xcassets */; };
 		8302E2F4226EB2AA00611734 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8302E2F2226EB2AA00611734 /* LaunchScreen.storyboard */; };
 		8360694A226EB4C800B1A764 /* MLDHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83606947226EB4C800B1A764 /* MLDHomeViewController.swift */; };
@@ -16,6 +15,7 @@
 		8360694C226EB4C800B1A764 /* MLDParameterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83606949226EB4C800B1A764 /* MLDParameterViewController.swift */; };
 		8360694E226EB4CF00B1A764 /* filter_test1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8360694D226EB4CF00B1A764 /* filter_test1.png */; };
 		83606951226EB4D900B1A764 /* MLDUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83606950226EB4D900B1A764 /* MLDUtils.swift */; };
+		8384AC6922ED4D6F002B5B3F /* MLDFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8384AC6822ED4D6F002B5B3F /* MLDFilter.swift */; };
 		B9781B6CC4D0D2FDA6DEF586 /* Pods_MovieousLiveDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54652C1CAF97B4B20C70C43C /* Pods_MovieousLiveDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +24,6 @@
 		54652C1CAF97B4B20C70C43C /* Pods_MovieousLiveDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieousLiveDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8302E2E6226EB2A900611734 /* MovieousLiveDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieousLiveDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8302E2E9226EB2A900611734 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8302E2EE226EB2A900611734 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8302E2F0226EB2AA00611734 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8302E2F3226EB2AA00611734 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8302E2F5226EB2AA00611734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -33,6 +32,7 @@
 		83606949226EB4C800B1A764 /* MLDParameterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLDParameterViewController.swift; sourceTree = "<group>"; };
 		8360694D226EB4CF00B1A764 /* filter_test1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = filter_test1.png; sourceTree = "<group>"; };
 		83606950226EB4D900B1A764 /* MLDUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLDUtils.swift; sourceTree = "<group>"; };
+		8384AC6822ED4D6F002B5B3F /* MLDFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLDFilter.swift; sourceTree = "<group>"; };
 		F3CB842DEB48DC735AE67B90 /* Pods-MovieousLiveDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieousLiveDemo.release.xcconfig"; path = "Target Support Files/Pods-MovieousLiveDemo/Pods-MovieousLiveDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,8 +82,8 @@
 				83606947226EB4C800B1A764 /* MLDHomeViewController.swift */,
 				83606949226EB4C800B1A764 /* MLDParameterViewController.swift */,
 				83606948226EB4C800B1A764 /* MLDStreamerViewController.swift */,
+				8384AC6822ED4D6F002B5B3F /* MLDFilter.swift */,
 				8302E2E9226EB2A900611734 /* AppDelegate.swift */,
-				8302E2ED226EB2A900611734 /* Main.storyboard */,
 				8302E2F0226EB2AA00611734 /* Assets.xcassets */,
 				8302E2F2226EB2AA00611734 /* LaunchScreen.storyboard */,
 				8302E2F5226EB2AA00611734 /* Info.plist */,
@@ -171,7 +171,6 @@
 				8302E2F4226EB2AA00611734 /* LaunchScreen.storyboard in Resources */,
 				8360694E226EB4CF00B1A764 /* filter_test1.png in Resources */,
 				8302E2F1226EB2AA00611734 /* Assets.xcassets in Resources */,
-				8302E2EF226EB2A900611734 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,20 +228,13 @@
 				8360694B226EB4C800B1A764 /* MLDStreamerViewController.swift in Sources */,
 				8302E2EA226EB2A900611734 /* AppDelegate.swift in Sources */,
 				8360694A226EB4C800B1A764 /* MLDHomeViewController.swift in Sources */,
+				8384AC6922ED4D6F002B5B3F /* MLDFilter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8302E2ED226EB2A900611734 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8302E2EE226EB2A900611734 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8302E2F2226EB2AA00611734 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

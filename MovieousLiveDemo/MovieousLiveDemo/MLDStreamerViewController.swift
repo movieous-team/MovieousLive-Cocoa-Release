@@ -29,16 +29,10 @@ class MLDStreamerViewController: UIViewController, MLStreamerDelegate, MLDParame
             ShowAlert(error: error, controller: self)
         }
         if let streamer = streamer {
+            let extern = MovieousExternalFilterCaptureEffect()
+            extern.externalFilterClass = MLDFilter.self
+            streamer.captureEffects = [extern]
             streamer.delegate = self
-            streamer.touchToFocusExposureEnabled = true
-            streamer.innerFocusViewEnabled = true
-            let LUTFilterRecorderEffect = MovieousLUTFilterCaptureEffect()
-            let image = UIImage(named: "filter_test1")!
-            LUTFilterRecorderEffect.image = image
-            let imageStickerFilterRecorderEffect = MovieousImageStickerCaptureEffect()
-            imageStickerFilterRecorderEffect.image = image
-            imageStickerFilterRecorderEffect.destRect = CGRect(x: 0, y: 0, width: 100, height: 100)
-//            streamer.captureEffects = [LUTFilterRecorderEffect, imageStickerFilterRecorderEffect]
             view.addSubview(streamer.previewView)
             streamer.previewView.frame = view.bounds
             weak var wSelf = self
@@ -80,7 +74,7 @@ class MLDStreamerViewController: UIViewController, MLStreamerDelegate, MLDParame
         sender.isSelected = !sender.isSelected
         if sender.isSelected {
             do {
-                try streamer?.startPushing(withServerURL: <#T##URL#>)
+                try streamer?.startPushing(withServerURL: URL(string: "rtmp://livepush.ucloud.com.cn/test/test")!)
             } catch {
                 ShowAlert(error: error, controller: self)
                 return
@@ -101,7 +95,7 @@ class MLDStreamerViewController: UIViewController, MLStreamerDelegate, MLDParame
     
     @objc func settingsButtonPressed(sender: UIBarButtonItem) {
         if let streamer = streamer {
-            let controller = MLDParameterViewController(style: .plain)
+            let controller = MLDParameterViewController()
             controller.title = "streamer configuration"
             controller.parameters = [
                 MLDParameter(name: "previewScalingMode", type: .enums, value: streamer.previewScalingMode, candidateValues: MovieousScalingMode.candidateValues()),
@@ -109,6 +103,7 @@ class MLDStreamerViewController: UIViewController, MLStreamerDelegate, MLDParame
                 MLDParameter(name: "mirrorBackPreview", type: .boolean, value: streamer.mirrorBackPreview),
                 MLDParameter(name: "mirrorFrontEncoded", type: .boolean, value: streamer.mirrorFrontEncoded),
                 MLDParameter(name: "mirrorBackEncoded", type: .boolean, value: streamer.mirrorBackEncoded),
+                MLDParameter(name: "blurSwitch", type: .boolean, value: streamer.blurSwitch),
                 MLDParameter(name: "touchToFocusExposureEnabled", type: .boolean, value: streamer.touchToFocusExposureEnabled),
                 MLDParameter(name: "innerFocusViewEnabled", type: .boolean, value: streamer.innerFocusViewEnabled),
                 MLDParameter(name: "preferredTorchMode", type: .enums, value: streamer.preferredTorchMode, candidateValues: AVCaptureDevice.TorchMode.candidateValues()),

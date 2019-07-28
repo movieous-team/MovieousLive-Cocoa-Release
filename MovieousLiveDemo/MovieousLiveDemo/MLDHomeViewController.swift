@@ -126,6 +126,8 @@ class MLDHomeViewController: UIViewController, MLDParameterViewControllerDelegat
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.view.backgroundColor = .white
+        
         startButton.setTitle("直播", for: .normal)
         startButton.addTarget(self, action: #selector(startButtonPressed(sender:)), for: .touchUpInside)
         view.addSubview(startButton)
@@ -163,7 +165,7 @@ class MLDHomeViewController: UIViewController, MLDParameterViewControllerDelegat
     }
     
     @objc func videoSettingsButtonPressed(sender: UIButton) {
-        let controller = MLDParameterViewController(style: .plain)
+        let controller = MLDParameterViewController()
         controller.title = "video configuration"
         controller.parameters = [
             MLDParameter(name: "size.width", type: .float, value: Float(videoConfiguration.size.width)),
@@ -173,6 +175,7 @@ class MLDHomeViewController: UIViewController, MLDParameterViewControllerDelegat
             MLDParameter(name: "mirrorBackPreview", type: .boolean, value: videoConfiguration.mirrorBackPreview),
             MLDParameter(name: "mirrorFrontEncoded", type: .boolean, value: videoConfiguration.mirrorFrontEncoded),
             MLDParameter(name: "mirrorBackEncoded", type: .boolean, value: videoConfiguration.mirrorBackEncoded),
+            MLDParameter(name: "blurSwitch", type: .boolean, value: videoConfiguration.blurSwitch),
             MLDParameter(name: "touchToFocusExposureEnabled", type: .boolean, value: videoConfiguration.touchToFocusExposureEnabled),
             MLDParameter(name: "innerFocusViewEnabled", type: .boolean, value: videoConfiguration.innerFocusViewEnabled),
             MLDParameter(name: "preferredTorchMode", type: .enums, value: videoConfiguration.preferredTorchMode, candidateValues: AVCaptureDevice.TorchMode.candidateValues()),
@@ -197,7 +200,7 @@ class MLDHomeViewController: UIViewController, MLDParameterViewControllerDelegat
     }
     
     @objc func audioSettingsButtonPressed(sender: UIButton) {
-        let controller = MLDParameterViewController(style: .plain)
+        let controller = MLDParameterViewController()
         controller.title = "audio configuration"
         controller.parameters = [
             MLDParameter(name: "bitrate", type: .int, value: audioConfiguration.bitrate),

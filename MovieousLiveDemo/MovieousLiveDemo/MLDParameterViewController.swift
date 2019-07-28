@@ -149,7 +149,8 @@ protocol MLDParameterViewControllerDelegate: class {
     func parameterViewController(_ viewController: MLDParameterViewController, parametersDidSaved parameters: [MLDParameter])
 }
 
-class MLDParameterViewController: UITableViewController, MLDParameterTableViewCellDelegate {
+class MLDParameterViewController: UIViewController {
+    let tableView = UITableView(frame: .zero, style: .plain)
     weak var delegate: MLDParameterViewControllerDelegate?
     var tapGestureRecognizer: UITapGestureRecognizer!
     var parameters: [MLDParameter]!
@@ -158,36 +159,24 @@ class MLDParameterViewController: UITableViewController, MLDParameterTableViewCe
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.view.backgroundColor = .white
+        
+        self.tableView.register(MLDParameterTableViewCell.self, forCellReuseIdentifier: "cell")
+        self.view.addSubview(self.tableView)
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        self.tableView.snp.makeConstraints { (make) in
+            make.top.equalTo(topLayoutGuide.snp.bottom)
+            make.left.equalToSuperview()
+            make.right.equalToSuperview()
+            make.bottom.equalToSuperview()
+        }
+        
         tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(viewTapped(sender:)))
         view.addGestureRecognizer(tapGestureRecognizer)
-        tableView.register(MLDParameterTableViewCell.self, forCellReuseIdentifier: "cell")
         
         let saveButton = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(saveButtonPressed(sender:)))
         navigationItem.setRightBarButton(saveButton, animated: true)
-    }
-    
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return parameters.count
-    }
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: MLDParameterTableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! MLDParameterTableViewCell
-        cell.parameter = parameters![indexPath.row]
-        cell.delegate = self
-        return cell
-    }
-    
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        switch parameters[indexPath.row].type {
-        case .enums:
-            return 100
-        default:
-            return 44
-        }
-    }
-    
-    override func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
-        return nil
     }
     
     @objc func saveButtonPressed(sender: UIButton) {
@@ -201,6 +190,35 @@ class MLDParameterViewController: UITableViewController, MLDParameterTableViewCe
         view.endEditing(true)
     }
     
+}
+
+extension MLDParameterViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return parameters.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell: MLDParameterTableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! MLDParameterTableViewCell
+        cell.parameter = parameters![indexPath.row]
+        cell.delegate = self
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        switch parameters[indexPath.row].type {
+        case .enums:
+            return 100
+        default:
+            return 44
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+        return nil
+    }
+}
+
+extension MLDParameterViewController: MLDParameterTableViewCellDelegate {
     func parameterTableViewCell(_ tableViewCell: MLDParameterTableViewCell, parameterValueDidChanged parameter: MLDParameter) {
         parameters[tableView.indexPath(for: tableViewCell)!.row] = parameter
     }
