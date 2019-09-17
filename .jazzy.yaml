@@ -1,5 +1,6 @@
 clean: true
 objc: true
+readme: README.en-us.md
 theme: fullwidth
 sdk: iphonesimulator
 umbrella_header: .jazzy/MovieousLive/MovieousLive.h
